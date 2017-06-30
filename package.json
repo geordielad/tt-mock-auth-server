@@ -1,11 +1,15 @@
 {
   "name": "ttauth_server",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Mock Authentication Server for Trusted Ticket Proxy",
   "main": "mock_auth_server.js",
   "scripts": {
     "start": "node mock-auth-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geordielad/tt-mock-auth-server.git"
   },
   "author": "Robin Cottiss",
   "license": "MIT",
