@@ -27,9 +27,10 @@ else {
 
   var server = httpServer.listen(config.port, function () {
     console.log('HTTP Auth server listening on port '+config.port);
-  });}
+  });
+}
 
-if (encUsernameFlag) {
+if (config.encUsernameFlag) {
   //var encPrivateKey = fs.readFileSync(config.encKeys.key, 'utf8');
   var encPublicKey = fs.readFileSync(config.encKeys.cert, 'utf8');
 
@@ -59,7 +60,7 @@ app.get('/login', function (req, res) {
 
   var username = config.tableauUsername;
 
-  if (config.encUsername) {
+  if (config.encUsernameFlag) {
     // We are going to do a Public Key Encryption with a Private Key Decryption at the other end
     username = ursaCrt.encrypt("rcottiss@tableau.rocks", 'utf8', 'base64');
   }
