@@ -1,0 +1,19 @@
+{
+  "name": "ttauth_server",
+  "version": "0.1.1",
+  "description": "Mock Authentication Server for Trusted Ticket Proxy",
+  "main": "mock_auth_server.js",
+  "scripts": {
+    "start": "node mock-auth-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Cottiss",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "passport-saml": "^0.15.0",
+    "request": "^2.81.0",
+    "urlencode": "^1.1.0",
+    "ursa": "^0.9.4"
+  }
+}
