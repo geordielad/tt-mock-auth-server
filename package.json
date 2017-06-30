@@ -8,11 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robin Cottiss",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
-    "passport-saml": "^0.15.0",
-    "request": "^2.81.0",
     "urlencode": "^1.1.0",
     "ursa": "^0.9.4"
   }
