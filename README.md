@@ -1,8 +1,8 @@
 # Tableau Trusted Ticket Mock Authentication Server
 ## Description
-This example implements a Mock Authenication Service to be used with Server Side Trusted Ticket Agent for Tableau  (https://github.com/geordielad/ttproxy.git).
+This example implements a Mock Authentication Service to be used with Server Side Trusted Ticket Agent for Tableau  (https://github.com/geordielad/ttproxy.git).
 
-The example configuration below should work on a non-SSL enabled Tableau Server with this agent and a Mock Authentication Server all on localhost. You do not need Siteminder. By deploying the various components on separate server and setting the config options appropriately you should be able to integrate this package in more complex environment.
+The example configuration below should work on a non-SSL enabled Tableau Server with this Mock Authentication Server, and the Trusted Ticket Agent, all on localhost. You do not need an external Access Management System. By deploying the various components on separate server and setting the config options appropriately you should be able to integrate this package in more complex environments.
 
 Even though the simple example does not an encrypted username you may need to install OpenSSL and Node-Gyp for the package to install. If you want to simplify the install you can remove any references to ursa (See https://github.com/quartzjer/ursa) in the package.json and mock-auth-server.js before installing the package.
 
