@@ -16,7 +16,9 @@
   "dependencies": {
     "express": "^4.14.0",
     "try-require": "^1.2.1",
-    "urlencode": "^1.1.0",
+    "urlencode": "^1.1.0"
+  },
+  "optionalDependencies": {
     "ursa": "^0.9.4"
   }
 }

@@ -4,7 +4,7 @@ This example implements a Mock Authentication Service to be used with Server Sid
 
 The example configuration below should work on a non-SSL enabled Tableau Server with this Mock Authentication Server, and the Trusted Ticket Agent, all on localhost. You do not need an external Access Management System. By deploying the various components on separate server and setting the config options appropriately you should be able to integrate this package in more complex environments.
 
-Even though the simple example does not an encrypted username you may need to install OpenSSL and Node-Gyp for the package to install. If you want to simplify the install you can remove any references to ursa (See https://github.com/quartzjer/ursa) in the package.json and mock-auth-server.js before installing the package.
+This example comes with the ability to encrypt the username when passing it from the mock-auth-server to ttproxy. This functionality uses an RSA Public/Private key encryption/decryption package called URSA (See https://github.com/quartzjer/ursa). The package.json, requires and config.js by default are set up not to require a successful URSA install. If you do want username encryption then you will need to configure your system so that URSA is successfully installed then you can change the encUsernameFlag in config.js on both packages.
 
 ## Usage
 
