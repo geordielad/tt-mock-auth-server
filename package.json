@@ -1,6 +1,6 @@
 {
   "name": "ttauth_server",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Mock Authentication Server for Trusted Ticket Proxy",
   "main": "mock_auth_server.js",
   "scripts": {
