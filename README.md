@@ -34,8 +34,10 @@ $ npm start
 4. Configure port and hostname settings for Proxy and Auth Server
     - Sample assumes http, localhost (for all Tableau, Proxy and Auth Server) and 8000 for the proxy and 8080 for the auth server.
 5.	In a command window
-    - cd tt-mock-auth-server
-    - npm start
+```bash
+    cd tt-mock-auth-server
+    npm start
+```
 6. In another command window
 ```bash
     cd ttproxy
